@@ -1,0 +1,1267 @@
+/* ===========================
+   SAFELINK - STYLE.CSS
+   Parte 1
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+:root{
+
+    --bg:#07131F;
+    --card:#111C2A;
+    --card2:#162434;
+    --primary:#2BE38A;
+    --primaryHover:#1CCF76;
+    --text:#FFFFFF;
+    --gray:#A8B3C2;
+    --border:#203347;
+    --shadow:0 15px 40px rgba(0,0,0,.35);
+
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:
+    radial-gradient(circle at top,#16385A 0%,#07131F 45%);
+
+    color:var(--text);
+
+    min-height:100vh;
+
+}
+
+/* HEADER */
+
+header{
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:25px 9%;
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    backdrop-filter:blur(18px);
+
+    background:rgba(8,17,30,.70);
+
+    border-bottom:1px solid rgba(255,255,255,.05);
+
+    z-index:999;
+
+}
+
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+}
+
+.logo i{
+
+    font-size:32px;
+
+    color:var(--primary);
+
+}
+
+.logo h2{
+
+    font-size:28px;
+
+    font-weight:700;
+
+}
+
+nav{
+
+    display:flex;
+
+    gap:35px;
+
+}
+
+nav a{
+
+    text-decoration:none;
+
+    color:white;
+
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+nav a:hover{
+
+    color:var(--primary);
+
+}
+
+/* HERO */
+
+.hero{
+
+    padding:170px 9% 70px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:80px;
+
+}
+
+.hero-text{
+
+    flex:1;
+
+}
+
+.hero-text h1{
+
+    font-size:58px;
+
+    line-height:1.15;
+
+    margin-bottom:20px;
+
+}
+
+.hero-text p{
+
+    color:var(--gray);
+
+    font-size:18px;
+
+    line-height:30px;
+
+    margin-bottom:35px;
+
+}
+
+.btn-primary{
+
+    background:linear-gradient(135deg,#2BE38A,#17b66a);
+
+    border:none;
+
+    color:white;
+
+    padding:17px 38px;
+
+    border-radius:50px;
+
+    cursor:pointer;
+
+    font-size:17px;
+
+    font-weight:600;
+
+    transition:.35s;
+
+    box-shadow:0 10px 30px rgba(43,227,138,.35);
+
+}
+
+.btn-primary:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 20px 45px rgba(43,227,138,.45);
+
+}
+
+.hero-image{
+
+    flex:1;
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+.hero-image img{
+
+    width:100%;
+
+    max-width:520px;
+
+    animation:float 5s ease-in-out infinite;
+
+}
+
+/* CARDS */
+
+.cards{
+
+    padding:40px 9%;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(330px,1fr));
+
+    gap:35px;
+
+}
+
+.card{
+
+    background:rgba(17,28,42,.88);
+
+    border:1px solid rgba(255,255,255,.05);
+
+    border-radius:25px;
+
+    padding:35px;
+
+    box-shadow:var(--shadow);
+
+    transition:.35s;
+
+    backdrop-filter:blur(12px);
+
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:var(--primary);
+
+}
+
+.card i{
+
+    font-size:55px;
+
+    color:var(--primary);
+
+    margin-bottom:25px;
+
+}
+
+.card h3{
+
+    font-size:27px;
+
+    margin-bottom:15px;
+
+}
+
+.card p{
+
+    color:var(--gray);
+
+    line-height:28px;
+
+    margin-bottom:28px;
+
+}
+
+.card input{
+
+    width:100%;
+
+    padding:17px;
+
+    border-radius:15px;
+
+    border:1px solid var(--border);
+
+    background:#0E1724;
+
+    color:white;
+
+    outline:none;
+
+    margin-bottom:18px;
+
+    font-size:15px;
+
+}
+
+.card input:focus{
+
+    border-color:var(--primary);
+
+}
+
+.card button{
+
+    width:100%;
+
+    padding:17px;
+
+    border:none;
+
+    border-radius:15px;
+
+    background:var(--primary);
+
+    color:white;
+
+    font-size:16px;
+
+    cursor:pointer;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.card button:hover{
+
+    background:var(--primaryHover);
+
+}
+
+/* RESULTADO */
+
+.result{
+
+    padding:80px 9%;
+
+}
+
+.result h2{
+
+    font-size:38px;
+
+    margin-bottom:30px;
+
+}
+
+#resultado{
+
+    background:var(--card);
+
+    border-radius:20px;
+
+    padding:35px;
+
+    border:1px solid rgba(255,255,255,.05);
+
+    color:var(--gray);
+
+    min-height:120px;
+
+    font-size:18px;
+
+}
+
+/*======================================
+   DICAS DE SEGURANÇA
+======================================*/
+
+.tips{
+
+    padding:90px 9%;
+
+}
+
+.tips h2{
+
+    font-size:40px;
+
+    margin-bottom:45px;
+
+    text-align:center;
+
+}
+
+.tips-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:28px;
+
+}
+
+.tip{
+
+    background:linear-gradient(180deg,#132233,#0D1825);
+
+    border:1px solid rgba(255,255,255,.06);
+
+    border-radius:22px;
+
+    padding:30px;
+
+    transition:.35s;
+
+    text-align:center;
+
+    overflow:hidden;
+
+    position:relative;
+
+}
+
+.tip::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:120px;
+
+    height:120px;
+
+    background:rgba(43,227,138,.12);
+
+    border-radius:50%;
+
+    top:-40px;
+
+    right:-40px;
+
+}
+
+.tip:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#2BE38A;
+
+    box-shadow:0 20px 45px rgba(0,0,0,.35);
+
+}
+
+.tip i{
+
+    font-size:50px;
+
+    color:#2BE38A;
+
+    margin-bottom:20px;
+
+}
+
+.tip h3{
+
+    margin-bottom:15px;
+
+    font-size:22px;
+
+}
+
+.tip p{
+
+    color:#A8B3C2;
+
+    line-height:28px;
+
+}
+
+
+/*======================================
+        HISTÓRICO
+======================================*/
+
+.history{
+
+    padding:80px 9%;
+
+}
+
+.history h2{
+
+    font-size:38px;
+
+    margin-bottom:30px;
+
+}
+
+#historyList{
+
+    list-style:none;
+
+}
+
+#historyList li{
+
+    background:#111C2A;
+
+    border:1px solid rgba(255,255,255,.05);
+
+    margin-bottom:18px;
+
+    padding:18px 25px;
+
+    border-radius:15px;
+
+    color:#d6d6d6;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    transition:.3s;
+
+}
+
+#historyList li:hover{
+
+    transform:translateX(8px);
+
+    border-left:5px solid #2BE38A;
+
+}
+
+
+/*======================================
+            FOOTER
+======================================*/
+
+footer{
+
+    margin-top:80px;
+
+    background:#09131E;
+
+    border-top:1px solid rgba(255,255,255,.05);
+
+    padding:50px 9%;
+
+    text-align:center;
+
+}
+
+footer h2{
+
+    font-size:34px;
+
+    color:#2BE38A;
+
+    margin-bottom:15px;
+
+}
+
+footer p{
+
+    color:#A8B3C2;
+
+    margin-bottom:15px;
+
+}
+
+footer small{
+
+    color:#748090;
+
+}
+
+
+/*======================================
+      SCROLLBAR
+======================================*/
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#07131F;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#2BE38A;
+
+    border-radius:50px;
+
+}
+
+
+/*======================================
+      ANIMAÇÕES
+======================================*/
+
+@keyframes float{
+
+    0%{
+
+        transform:translateY(0px);
+
+    }
+
+    50%{
+
+        transform:translateY(-15px);
+
+    }
+
+    100%{
+
+        transform:translateY(0px);
+
+    }
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0px);
+
+    }
+
+}
+
+.hero,
+.cards,
+.result,
+.tips,
+.history{
+
+    animation:fadeUp .9s ease;
+
+}
+
+
+/*======================================
+      RESPONSIVO
+======================================*/
+
+@media(max-width:1100px){
+
+.hero{
+
+    flex-direction:column;
+
+    text-align:center;
+
+}
+
+.hero-image{
+
+    margin-top:50px;
+
+}
+
+}
+
+@media(max-width:850px){
+
+header{
+
+    flex-direction:column;
+
+    gap:20px;
+
+    padding:20px;
+
+}
+
+nav{
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    gap:18px;
+
+}
+
+.hero{
+
+    padding-top:220px;
+
+}
+
+.hero h1{
+
+    font-size:42px;
+
+}
+
+.hero p{
+
+    font-size:16px;
+
+}
+
+.cards{
+
+    grid-template-columns:1fr;
+
+}
+
+.tips-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+}
+
+@media(max-width:550px){
+
+.hero h1{
+
+    font-size:34px;
+
+}
+
+.logo h2{
+
+    font-size:24px;
+
+}
+
+.card{
+
+    padding:25px;
+
+}
+
+.result h2,
+.tips h2,
+.history h2{
+
+    font-size:30px;
+
+}
+
+}
+
+/* ==========================================
+   SAFELINK - STYLE.CSS
+   PARTE 3 (Premium UI)
+========================================== */
+
+/* Fundo com brilho */
+
+body::before{
+
+    content:"";
+
+    position:fixed;
+
+    top:-250px;
+    left:-250px;
+
+    width:600px;
+    height:600px;
+
+    border-radius:50%;
+
+    background:radial-gradient(circle,
+    rgba(43,227,138,.12),
+    transparent 70%);
+
+    z-index:-2;
+
+}
+
+body::after{
+
+    content:"";
+
+    position:fixed;
+
+    right:-250px;
+    bottom:-250px;
+
+    width:700px;
+    height:700px;
+
+    border-radius:50%;
+
+    background:radial-gradient(circle,
+    rgba(37,99,235,.18),
+    transparent 70%);
+
+    z-index:-2;
+
+}
+
+
+/*======================================
+    Barra superior elegante
+======================================*/
+
+header{
+
+    transition:.35s;
+
+}
+
+header:hover{
+
+    background:rgba(10,18,30,.90);
+
+    box-shadow:0 15px 40px rgba(0,0,0,.35);
+
+}
+
+
+/*======================================
+          LOGO
+======================================*/
+
+.logo{
+
+    cursor:pointer;
+
+}
+
+.logo i{
+
+    transition:.4s;
+
+}
+
+.logo:hover i{
+
+    transform:rotate(360deg);
+
+    color:#37ff9c;
+
+}
+
+
+/*======================================
+      Links do menu
+======================================*/
+
+nav a{
+
+    position:relative;
+
+}
+
+nav a::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:0%;
+
+    height:2px;
+
+    background:#2BE38A;
+
+    left:0;
+    bottom:-8px;
+
+    transition:.35s;
+
+}
+
+nav a:hover::after{
+
+    width:100%;
+
+}
+
+
+/*======================================
+      Hero
+======================================*/
+
+.hero h1{
+
+    background:linear-gradient(
+    90deg,
+    white,
+    #9fe8c1);
+
+    -webkit-background-clip:text;
+
+    -webkit-text-fill-color:transparent;
+
+}
+
+.hero-image img{
+
+    filter:
+    drop-shadow(0 30px 60px rgba(43,227,138,.15));
+
+}
+
+
+/*======================================
+        Cards Premium
+======================================*/
+
+.card{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.card::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:180px;
+
+    height:180px;
+
+    background:rgba(43,227,138,.08);
+
+    border-radius:50%;
+
+    top:-60px;
+    right:-60px;
+
+    transition:.4s;
+
+}
+
+.card:hover::before{
+
+    transform:scale(1.3);
+
+}
+
+.card::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:linear-gradient(
+    130deg,
+    transparent,
+    rgba(255,255,255,.04),
+    transparent);
+
+    transform:translateX(-120%);
+
+    transition:.8s;
+
+}
+
+.card:hover::after{
+
+    transform:translateX(120%);
+
+}
+
+.card button{
+
+    box-shadow:
+    0 10px 25px rgba(43,227,138,.25);
+
+}
+
+.card button:hover{
+
+    transform:translateY(-3px);
+
+}
+
+
+/*======================================
+     Inputs Premium
+======================================*/
+
+.card input{
+
+    transition:.3s;
+
+}
+
+.card input:hover{
+
+    background:#152334;
+
+}
+
+.card input:focus{
+
+    box-shadow:
+    0 0 20px rgba(43,227,138,.20);
+
+}
+
+
+/*======================================
+      Resultado
+======================================*/
+
+#resultado{
+
+    transition:.4s;
+
+}
+
+#resultado:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 20px 40px rgba(0,0,0,.30);
+
+}
+
+
+/*======================================
+      Cards das Dicas
+======================================*/
+
+.tip{
+
+    cursor:pointer;
+
+}
+
+.tip:hover i{
+
+    transform:scale(1.2);
+
+}
+
+.tip i{
+
+    transition:.35s;
+
+}
+
+
+/*======================================
+       Histórico
+======================================*/
+
+#historyList li{
+
+    backdrop-filter:blur(12px);
+
+}
+
+#historyList li:hover{
+
+    background:#16273b;
+
+}
+
+
+/*======================================
+          Footer
+======================================*/
+
+footer{
+
+    position:relative;
+
+}
+
+footer::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+    left:50%;
+
+    transform:translateX(-50%);
+
+    width:180px;
+    height:2px;
+
+    background:#2BE38A;
+
+}
+
+
+/*======================================
+      Seleção de texto
+======================================*/
+
+::selection{
+
+    background:#2BE38A;
+
+    color:#07131F;
+
+}
+
+
+/*======================================
+        Botão subir
+======================================*/
+
+#topButton{
+
+    position:fixed;
+
+    right:30px;
+
+    bottom:30px;
+
+    width:55px;
+
+    height:55px;
+
+    border-radius:50%;
+
+    border:none;
+
+    background:#2BE38A;
+
+    color:white;
+
+    cursor:pointer;
+
+    font-size:20px;
+
+    display:none;
+
+    transition:.3s;
+
+    box-shadow:0 15px 35px rgba(43,227,138,.30);
+
+}
+
+#topButton:hover{
+
+    transform:translateY(-8px);
+
+}
+
+
+/*======================================
+        Scroll Reveal
+======================================*/
+
+.card,
+.tip,
+.result,
+.history{
+
+    opacity:0;
+
+    transform:translateY(35px);
+
+    animation:show .8s forwards;
+
+}
+
+.card:nth-child(2){
+
+    animation-delay:.15s;
+
+}
+
+.tip:nth-child(2){
+
+    animation-delay:.10s;
+
+}
+
+.tip:nth-child(3){
+
+    animation-delay:.20s;
+
+}
+
+.tip:nth-child(4){
+
+    animation-delay:.30s;
+
+}
+
+@keyframes show{
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+/*======================================
+       Glassmorphism
+======================================*/
+
+.card,
+.tip,
+#resultado,
+#historyList li{
+
+    backdrop-filter:blur(18px);
+
+    -webkit-backdrop-filter:blur(18px);
+
+}
+
+
+/*======================================
+      Hover geral
+======================================*/
+
+button{
+
+    transition:.35s;
+
+}
+
+button:hover{
+
+    filter:brightness(1.05);
+
+}
+

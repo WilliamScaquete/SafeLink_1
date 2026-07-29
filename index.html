@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SafeLink | Segurança Digital</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/4b3d7a14b8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        <i class="fa-solid fa-shield-halved"></i>
+        <h2>SafeLink</h2>
+    </div>
+
+    <nav>
+
+        <a href="#">Início</a>
+        <a href="#">Verificar</a>
+        <a href="#">Privacidade</a>
+        <a href="#">Sobre</a>
+
+    </nav>
+
+</header>
+
+<section class="hero">
+
+    <div class="hero-text">
+
+        <h1>Proteja seus dados na internet.</h1>
+
+        <p>
+
+            Descubra se um link ou telefone pode ser perigoso antes de clicar
+            ou responder.
+
+        </p>
+
+        <button class="btn-primary">
+
+            Começar
+
+        </button>
+
+    </div>
+
+    <div class="hero-image">
+
+        <img src="./imagens/SafeLink1.png" alt="Segurança">
+
+    </div>
+
+</section>
+
+<section class="cards">
+
+    <div class="card">
+
+        <i class="fa-solid fa-link"></i>
+
+        <h3>Verificar Link</h3>
+
+        <p>
+
+            Cole qualquer URL para descobrir se existe risco de phishing,
+            golpes ou malware.
+
+        </p>
+
+        <input
+            type="text"
+            id="urlInput"
+            placeholder="https://site.com">
+
+        <button onclick="checkURL()">
+
+            Verificar
+
+        </button>
+
+    </div>
+
+    <div class="card">
+
+        <i class="fa-solid fa-phone"></i>
+
+        <h3>Verificar Telefone</h3>
+
+        <p>
+
+            Consulte números suspeitos utilizados em golpes.
+
+        </p>
+
+        <input
+            type="text"
+            id="phoneInput"
+            placeholder="(00) 00000-0000">
+
+        <button onclick="checkPhone()">
+
+            Verificar
+
+        </button>
+
+    </div>
+
+</section>
+
+<section class="result">
+
+    <h2>Resultado</h2>
+
+    <div id="resultado">
+
+        Nenhuma consulta realizada.
+
+    </div>
+
+</section>
+
+<section class="tips">
+
+    <h2>Dicas de Segurança</h2>
+
+    <div class="tips-grid">
+
+        <div class="tip">
+
+            <i class="fa-solid fa-lock"></i>
+
+            <h3>Use Senhas Fortes</h3>
+
+            <p>
+
+                Nunca reutilize senhas.
+
+            </p>
+
+        </div>
+
+        <div class="tip">
+
+            <i class="fa-solid fa-user-secret"></i>
+
+            <h3>Proteja seus Dados</h3>
+
+            <p>
+
+                Não compartilhe documentos pessoais.
+
+            </p>
+
+        </div>
+
+        <div class="tip">
+
+            <i class="fa-solid fa-triangle-exclamation"></i>
+
+            <h3>Desconfie</h3>
+
+            <p>
+
+                Promoções milagrosas geralmente são golpes.
+
+            </p>
+
+        </div>
+
+        <div class="tip">
+
+            <i class="fa-solid fa-shield"></i>
+
+            <h3>HTTPS</h3>
+
+            <p>
+
+                Verifique se o site possui certificado.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="history">
+
+    <h2>Últimas Verificações</h2>
+
+    <ul id="historyList">
+
+    </ul>
+
+</section>
+
+<footer>
+
+    <h2>SafeLink</h2>
+
+    <p>
+
+        Segurança • Privacidade • Conscientização Digital
+
+    </p>
+
+    <small>
+
+        © 2026 SafeLink
+
+    </small>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
